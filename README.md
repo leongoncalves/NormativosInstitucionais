@@ -1,7 +1,10 @@
+<img width="1879" height="923" alt="image" src="https://github.com/user-attachments/assets/a6e1426b-612a-4e66-a8f3-007342dbafce" />
+
 # 📋 Repositório de Normativos Institucionais — IFTO
 
 Página estática em HTML/CSS/JS para consulta centralizada de atos normativos institucionais, com controle de vigência, identificação de normas revogadas e filtros de busca.
 
+* Página exemplificativa, devendo ser adaptada ao contexto e a necessidade. Funções de busca já implementadas.
 ---
 
 ## Por que esta página existe
