@@ -1,722 +1,996 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Normativos Institucionais — IFTO</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normativos Institucionais — IFTO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  :root {
-    --bg:       #f5f3ef;
-    --surface:  #ffffff;
-    --border:   #dddbd5;
-    --border2:  #c9c6be;
-    --text:     #1a1917;
-    --muted:    #6b6860;
-    --muted2:   #9b9890;
-    --accent:   #1a4a2e;
-    --accent-l: #e8f0eb;
-    --danger:   #7a1f1f;
-    --danger-l: #f5e8e8;
-    --warn:     #5c3d00;
-    --warn-l:   #fdf3e0;
-    --info:     #1a3560;
-    --info-l:   #e8eef8;
-    --font-display: 'Syne', sans-serif;
-    --font-body:    'Crimson Pro', Georgia, serif;
-    --font-mono:    'JetBrains Mono', monospace;
-    --radius:   6px;
-    --shadow:   0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.04);
-  }
+    :root {
+      --bg: #f5f3ef;
+      --surface: #ffffff;
+      --border: #dddbd5;
+      --border2: #c9c6be;
+      --text: #1a1917;
+      --muted: #6b6860;
+      --muted2: #9b9890;
+      --accent: #1a4a2e;
+      --accent-l: #e8f0eb;
+      --danger: #7a1f1f;
+      --danger-l: #f5e8e8;
+      --warn: #5c3d00;
+      --warn-l: #fdf3e0;
+      --info: #1a3560;
+      --info-l: #e8eef8;
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'Crimson Pro', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --radius: 6px;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.07), 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
 
-  body {
-    font-family: var(--font-body);
-    background: var(--bg);
-    color: var(--text);
-    font-size: 16px;
-    line-height: 1.6;
-    min-height: 100vh;
-  }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
 
-  /* ── HEADER ── */
-  header {
-    background: var(--accent);
-    color: #fff;
-    padding: 0 48px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    height: 64px;
-    border-bottom: 3px solid rgba(255,255,255,0.12);
-  }
-  .logo-mark {
-    font-family: var(--font-display);
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #fff;
-    white-space: nowrap;
-  }
-  .logo-sep {
-    width: 1px; height: 28px;
-    background: rgba(255,255,255,0.25);
-  }
-  .logo-sub {
-    font-family: var(--font-display);
-    font-size: 12px;
-    font-weight: 400;
-    color: rgba(255,255,255,0.7);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  .header-right {
-    margin-left: auto;
-    font-family: var(--font-display);
-    font-size: 11px;
-    color: rgba(255,255,255,0.55);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
+    /* ── HEADER ── */
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 0 48px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      height: 64px;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.12);
+    }
 
-  /* ── HERO BAND ── */
-  .hero {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 40px 48px 32px;
-  }
-  .hero-eyebrow {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  .hero-title {
-    font-family: var(--font-display);
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.02em;
-    margin-bottom: 8px;
-    line-height: 1.15;
-  }
-  .hero-desc {
-    font-size: 17px;
-    color: var(--muted);
-    max-width: 680px;
-    line-height: 1.5;
-  }
+    .logo-mark {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #fff;
+      white-space: nowrap;
+    }
 
-  /* ── STATS ROW ── */
-  .stats-row {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 0 48px;
-    display: flex;
-    gap: 0;
-  }
-  .stat {
-    padding: 14px 32px 14px 0;
-    margin-right: 32px;
-    border-right: 1px solid var(--border);
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-  }
-  .stat:last-child { border-right: none; }
-  .stat-num {
-    font-family: var(--font-display);
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--text);
-  }
-  .stat-label {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-  .stat-num.rev { color: var(--danger); }
-  .stat-num.vig { color: var(--accent); }
+    .logo-sep {
+      width: 1px;
+      height: 28px;
+      background: rgba(255, 255, 255, 0.25);
+    }
 
-  /* ── TOOLBAR ── */
-  .toolbar {
-    padding: 20px 48px;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    flex-wrap: wrap;
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  .search-wrap {
-    position: relative;
-    flex: 1;
-    min-width: 240px;
-    max-width: 420px;
-  }
-  .search-wrap svg {
-    position: absolute;
-    left: 12px; top: 50%;
-    transform: translateY(-50%);
-    color: var(--muted2);
-    pointer-events: none;
-  }
-  input[type="text"] {
-    width: 100%;
-    height: 38px;
-    border: 1px solid var(--border2);
-    border-radius: var(--radius);
-    background: var(--surface);
-    font-family: var(--font-body);
-    font-size: 15px;
-    color: var(--text);
-    padding: 0 12px 0 36px;
-    outline: none;
-    transition: border-color .15s, box-shadow .15s;
-  }
-  input[type="text"]:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(26,74,46,0.12);
-  }
-  select {
-    height: 38px;
-    border: 1px solid var(--border2);
-    border-radius: var(--radius);
-    background: var(--surface);
-    font-family: var(--font-body);
-    font-size: 15px;
-    color: var(--text);
-    padding: 0 32px 0 12px;
-    outline: none;
-    cursor: pointer;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6860' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    transition: border-color .15s;
-  }
-  select:focus { border-color: var(--accent); outline: none; }
-  .toolbar-label {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-  #result-count {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--muted2);
-    margin-left: auto;
-    white-space: nowrap;
-  }
+    .logo-sub {
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
 
-  /* ── TABLE ── */
-  .table-wrap {
-    padding: 24px 48px 60px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--surface);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border);
-  }
-  thead th {
-    font-family: var(--font-mono);
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.10em;
-    text-transform: uppercase;
-    color: var(--muted);
-    background: var(--bg);
-    padding: 12px 16px;
-    text-align: left;
-    border-bottom: 1px solid var(--border);
-    white-space: nowrap;
-    cursor: pointer;
-    user-select: none;
-    transition: background .12s;
-  }
-  thead th:hover { background: #eceae4; }
-  thead th.sorted { color: var(--accent); }
-  thead th .sort-icon { margin-left: 5px; opacity: 0.4; }
-  thead th.sorted .sort-icon { opacity: 1; }
+    .header-right {
+      margin-left: auto;
+      font-family: var(--font-display);
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.55);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
 
-  tbody tr {
-    border-bottom: 1px solid var(--border);
-    transition: background .1s;
-  }
-  tbody tr:last-child { border-bottom: none; }
-  tbody tr:hover { background: #faf9f6; }
-  tbody tr.revogado { background: #fdf9f9; }
-  tbody tr.revogado:hover { background: #faf3f3; }
+    /* ── HERO BAND ── */
+    .hero {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 48px 32px;
+    }
 
-  td {
-    padding: 14px 16px;
-    vertical-align: top;
-    font-size: 15px;
-    line-height: 1.5;
-  }
+    .hero-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
 
-  .td-data {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    color: var(--muted);
-    white-space: nowrap;
-    min-width: 90px;
-  }
-  .td-tipo {
-    min-width: 90px;
-  }
-  .tipo-pill {
-    display: inline-block;
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding: 2px 7px;
-    border-radius: 3px;
-    font-weight: 500;
-    white-space: nowrap;
-  }
-  .tipo-portaria    { background: var(--info-l);   color: var(--info);   }
-  .tipo-resolucao   { background: var(--accent-l); color: var(--accent); }
-  .tipo-orientacao  { background: var(--warn-l);   color: var(--warn);   }
-  .tipo-instrucao   { background: #ede8f5;         color: #3d2070;       }
-  .tipo-deliberacao { background: #e8f3f8;         color: #0d3d58;       }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      line-height: 1.15;
+    }
 
-  .td-titulo {
-    min-width: 220px;
-    max-width: 300px;
-  }
-  .doc-numero {
-    font-family: var(--font-mono);
-    font-size: 11.5px;
-    color: var(--muted);
-    margin-bottom: 3px;
-  }
-  .doc-link {
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.45;
-    border-bottom: 1px solid transparent;
-    transition: border-color .12s, color .12s;
-  }
-  .doc-link:hover {
-    color: var(--accent);
-    border-bottom-color: var(--accent);
-  }
-  .revogado .doc-link {
-    color: var(--muted);
-  }
-  .revogado .doc-link:hover {
-    color: var(--danger);
-    border-bottom-color: var(--danger);
-  }
+    .hero-desc {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 680px;
+      line-height: 1.5;
+    }
 
-  .td-ementa {
-    font-size: 14px;
-    color: var(--muted);
-    max-width: 360px;
-    line-height: 1.5;
-  }
-  .revogado .td-ementa {
-    color: var(--muted2);
-  }
+    /* ── STATS ROW ── */
+    .stats-row {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 48px;
+      display: flex;
+      gap: 0;
+    }
 
-  .td-status { min-width: 160px; }
-  .status-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-family: var(--font-mono);
-    font-size: 10.5px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 3px 9px;
-    border-radius: 3px;
-    white-space: nowrap;
-    margin-bottom: 6px;
-  }
-  .badge-vigor   { background: var(--accent-l); color: var(--accent); }
-  .badge-rev     { background: var(--danger-l); color: var(--danger); }
-  .badge-parcial { background: var(--warn-l);   color: var(--warn);   }
+    .stat {
+      padding: 14px 32px 14px 0;
+      margin-right: 32px;
+      border-right: 1px solid var(--border);
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
 
-  .revogado-por {
-    font-size: 12.5px;
-    color: var(--muted);
-    line-height: 1.4;
-    margin-top: 4px;
-  }
-  .revogado-por a {
-    color: var(--danger);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(122,31,31,0.3);
-    transition: border-color .12s;
-  }
-  .revogado-por a:hover { border-bottom-color: var(--danger); }
+    .stat:last-child {
+      border-right: none;
+    }
 
-  /* vigência / datas extras */
-  .td-vigencia {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--muted);
-    white-space: nowrap;
-    min-width: 90px;
-  }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+    }
 
-  /* no results */
-  .no-results {
-    text-align: center;
-    padding: 60px 20px;
-    font-size: 16px;
-    color: var(--muted);
-    display: none;
-  }
-  .no-results strong {
-    display: block;
-    font-family: var(--font-display);
-    font-size: 20px;
-    color: var(--text);
-    margin-bottom: 6px;
-  }
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
 
-  /* footer */
-  footer {
-    text-align: center;
-    padding: 24px 48px;
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--muted2);
-    border-top: 1px solid var(--border);
-    letter-spacing: 0.05em;
-  }
+    .stat-num.rev {
+      color: var(--danger);
+    }
 
-  /* responsive */
-  @media (max-width: 900px) {
-    header, .hero, .stats-row, .toolbar, .table-wrap { padding-left: 20px; padding-right: 20px; }
-    .td-ementa { display: none; }
-    .td-vigencia { display: none; }
-  }
-  @media (max-width: 600px) {
-    .hero-title { font-size: 22px; }
-    .td-tipo { display: none; }
-  }
-</style>
+    .stat-num.vig {
+      color: var(--accent);
+    }
+
+    /* ── TOOLBAR ── */
+    .toolbar {
+      padding: 20px 48px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 240px;
+      max-width: 420px;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted2);
+      pointer-events: none;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      height: 38px;
+      border: 1px solid var(--border2);
+      border-radius: var(--radius);
+      background: var(--surface);
+      font-family: var(--font-body);
+      font-size: 15px;
+      color: var(--text);
+      padding: 0 12px 0 36px;
+      outline: none;
+      transition: border-color .15s, box-shadow .15s;
+    }
+
+    input[type="text"]:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(26, 74, 46, 0.12);
+    }
+
+    select {
+      height: 38px;
+      border: 1px solid var(--border2);
+      border-radius: var(--radius);
+      background: var(--surface);
+      font-family: var(--font-body);
+      font-size: 15px;
+      color: var(--text);
+      padding: 0 32px 0 12px;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6860' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      transition: border-color .15s;
+    }
+
+    select:focus {
+      border-color: var(--accent);
+      outline: none;
+    }
+
+    .toolbar-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #result-count {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted2);
+      margin-left: auto;
+      white-space: nowrap;
+    }
+
+    .btn-search,
+    .btn-clear {
+      height: 38px;
+      padding: 0 16px;
+      border: none;
+      border-radius: var(--radius);
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background .15s, color .15s;
+    }
+
+    .btn-search {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-search:hover {
+      background: #113821;
+    }
+
+    .btn-clear {
+      background: var(--danger-l);
+      color: var(--danger);
+    }
+
+    .btn-clear:hover {
+      background: #ebd6d6;
+    }
+
+    /* ── TABLE ── */
+    .table-wrap {
+      padding: 24px 48px 60px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    thead th {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--bg);
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+      transition: background .12s;
+    }
+
+    thead th:hover {
+      background: #eceae4;
+    }
+
+    thead th.sorted {
+      color: var(--accent);
+    }
+
+    thead th .sort-icon {
+      margin-left: 5px;
+      opacity: 0.4;
+    }
+
+    thead th.sorted .sort-icon {
+      opacity: 1;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background .1s;
+    }
+
+    tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    tbody tr:hover {
+      background: #faf9f6;
+    }
+
+    tbody tr.revogado {
+      background: #fdf9f9;
+    }
+
+    tbody tr.revogado:hover {
+      background: #faf3f3;
+    }
+
+    td {
+      padding: 14px 16px;
+      vertical-align: top;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .td-data {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+      min-width: 90px;
+    }
+
+    .td-tipo {
+      min-width: 90px;
+    }
+
+    .tipo-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 3px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .tipo-portaria {
+      background: var(--info-l);
+      color: var(--info);
+    }
+
+    .tipo-resolucao {
+      background: var(--accent-l);
+      color: var(--accent);
+    }
+
+    .tipo-orientacao {
+      background: var(--warn-l);
+      color: var(--warn);
+    }
+
+    .tipo-instrucao {
+      background: #ede8f5;
+      color: #3d2070;
+    }
+
+    .tipo-deliberacao {
+      background: #e8f3f8;
+      color: #0d3d58;
+    }
+
+    .td-titulo {
+      min-width: 220px;
+      max-width: 300px;
+    }
+
+    .doc-numero {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .doc-link {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.45;
+      border-bottom: 1px solid transparent;
+      transition: border-color .12s, color .12s;
+    }
+
+    .doc-link:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .revogado .doc-link {
+      color: var(--muted);
+    }
+
+    .revogado .doc-link:hover {
+      color: var(--danger);
+      border-bottom-color: var(--danger);
+    }
+
+    .td-ementa {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 360px;
+      line-height: 1.5;
+    }
+
+    .revogado .td-ementa {
+      color: var(--muted2);
+    }
+
+    .td-status {
+      min-width: 160px;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 3px 9px;
+      border-radius: 3px;
+      white-space: nowrap;
+      margin-bottom: 6px;
+    }
+
+    .badge-vigor {
+      background: var(--accent-l);
+      color: var(--accent);
+    }
+
+    .badge-rev {
+      background: var(--danger-l);
+      color: var(--danger);
+    }
+
+    .badge-parcial {
+      background: var(--warn-l);
+      color: var(--warn);
+    }
+
+    .revogado-por {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.4;
+      margin-top: 4px;
+    }
+
+    .revogado-por a {
+      color: var(--danger);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(122, 31, 31, 0.3);
+      transition: border-color .12s;
+    }
+
+    .revogado-por a:hover {
+      border-bottom-color: var(--danger);
+    }
+
+    /* vigência / datas extras */
+    .td-vigencia {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      min-width: 90px;
+    }
+
+    /* no results */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 16px;
+      color: var(--muted);
+      display: none;
+    }
+
+    .no-results strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    /* footer */
+    footer {
+      text-align: center;
+      padding: 24px 48px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted2);
+      border-top: 1px solid var(--border);
+      letter-spacing: 0.05em;
+    }
+
+    /* responsive */
+    @media (max-width: 900px) {
+
+      header,
+      .hero,
+      .stats-row,
+      .toolbar,
+      .table-wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .td-ementa {
+        display: none;
+      }
+
+      .td-vigencia {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-title {
+        font-size: 22px;
+      }
+
+      .td-tipo {
+        display: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <span class="logo-mark">IFTO</span>
-  <div class="logo-sep"></div>
-  <span class="logo-sub">AUDIN · Unidade de Auditoria Interna</span>
-  <span class="header-right">Sistema de Gestão Normativa - Página de teste, meramente ilustrativa e de cunho exemplificativo.</span>
-</header>
+  <header>
+    <span class="logo-mark">IFTO</span>
+    <div class="logo-sep"></div>
+    <span class="logo-sub">AUDIN · Unidade de Auditoria Interna</span>
+    <span class="header-right">Sistema de Gestão Normativa - Página de teste, meramente de cunho exemplificativo.</span>
+  </header>
 
-<div class="hero">
-  <div class="hero-eyebrow">Repositório oficial · Acervo completo</div>
-  <h1 class="hero-title">Normativos Institucionais</h1>
-  <p class="hero-desc">Consulta centralizada de todos os atos normativos — portarias, resoluções, instruções normativas, orientações e deliberações — incluindo os já revogados, com identificação clara de vigência e referência ao normativo substituto.</p>
-</div>
+  <div class="hero">
+    <div class="hero-eyebrow">Repositório oficial · Acervo completo</div>
+    <h1 class="hero-title">Normativos Institucionais</h1>
+    <p class="hero-desc">Consulta centralizada de todos os atos normativos — portarias, resoluções, instruções
+      normativas, orientações e deliberações — incluindo os já revogados, com identificação clara de vigência e
+      referência ao normativo substituto.</p>
+  </div>
 
-<div class="stats-row">
-  <div class="stat">
-    <span class="stat-num" id="total-count">8</span>
-    <span class="stat-label">Total de normativos</span>
+  <div class="stats-row">
+    <div class="stat">
+      <span class="stat-num" id="total-count">8</span>
+      <span class="stat-label">Total de normativos</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num vig" id="vigor-count">7</span>
+      <span class="stat-label">Em vigor</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num rev" id="rev-count">1</span>
+      <span class="stat-label">Revogados</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" id="tipo-count">4</span>
+      <span class="stat-label">Tipos de ato</span>
+    </div>
   </div>
-  <div class="stat">
-    <span class="stat-num vig" id="vigor-count">7</span>
-    <span class="stat-label">Em vigor</span>
-  </div>
-  <div class="stat">
-    <span class="stat-num rev" id="rev-count">1</span>
-    <span class="stat-label">Revogados</span>
-  </div>
-  <div class="stat">
-    <span class="stat-num" id="tipo-count">4</span>
-    <span class="stat-label">Tipos de ato</span>
-  </div>
-</div>
 
-<div class="toolbar">
-  <div class="search-wrap">
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-      <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.4"/>
-      <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-    </svg>
-    <input type="text" id="search" placeholder="Buscar por número, título, ementa…" oninput="filterTable()">
+  <div class="toolbar">
+    <div class="search-wrap">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+        <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.4" />
+        <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+      </svg>
+      <input type="text" id="search" placeholder="Buscar por número, título, ementa…"
+        onkeydown="if(event.key === 'Enter') filterTable(); else if(event.key === 'Escape') clearSearch();">
+    </div>
+    <button onclick="filterTable()" class="btn-search">Buscar</button>
+    <button onclick="clearSearch()" class="btn-clear" id="btn-clear-search" style="display:none;"
+      title="Limpar busca (ESC)">Limpar</button>
+    <span class="toolbar-label">Tipo</span>
+    <select id="filter-tipo" onchange="filterTable()">
+      <option value="">Todos</option>
+      <option value="portaria">Portaria</option>
+      <option value="resolucao">Resolução</option>
+      <option value="instrucao">Instrução Normativa</option>
+      <option value="orientacao">Orientação Prática</option>
+      <option value="deliberacao">Deliberação</option>
+    </select>
+    <span class="toolbar-label">Vigência</span>
+    <select id="filter-status" onchange="filterTable()">
+      <option value="">Todos</option>
+      <option value="vigor">Em vigor</option>
+      <option value="revogado">Revogados</option>
+      <option value="parcial">Alterados parcialmente</option>
+    </select>
+    <span class="toolbar-label">Ano</span>
+    <select id="filter-ano" onchange="filterTable()">
+      <option value="">Todos</option>
+      <option value="2025">2025</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+    </select>
+    <span id="result-count">8 resultados</span>
   </div>
-  <span class="toolbar-label">Tipo</span>
-  <select id="filter-tipo" onchange="filterTable()">
-    <option value="">Todos</option>
-    <option value="portaria">Portaria</option>
-    <option value="resolucao">Resolução</option>
-    <option value="instrucao">Instrução Normativa</option>
-    <option value="orientacao">Orientação Prática</option>
-    <option value="deliberacao">Deliberação</option>
-  </select>
-  <span class="toolbar-label">Vigência</span>
-  <select id="filter-status" onchange="filterTable()">
-    <option value="">Todos</option>
-    <option value="vigor">Em vigor</option>
-    <option value="revogado">Revogados</option>
-    <option value="parcial">Alterados parcialmente</option>
-  </select>
-  <span class="toolbar-label">Ano</span>
-  <select id="filter-ano" onchange="filterTable()">
-    <option value="">Todos</option>
-    <option value="2025">2025</option>
-    <option value="2024">2024</option>
-    <option value="2023">2023</option>
-    <option value="2022">2022</option>
-  </select>
-  <span id="result-count">8 resultados</span>
-</div>
 
-<div class="table-wrap">
-  <table id="normativos-table">
-    <thead>
-      <tr>
-        <th onclick="sortTable(0)" data-col="0">Data <span class="sort-icon">↕</span></th>
-        <th onclick="sortTable(1)" data-col="1">Tipo <span class="sort-icon">↕</span></th>
-        <th onclick="sortTable(2)" data-col="2">Título / Número <span class="sort-icon">↕</span></th>
-        <th>Ementa</th>
-        <th>Vigência</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody id="tbody">
+  <div class="table-wrap">
+    <table id="normativos-table">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)" data-col="0">Data <span class="sort-icon">↕</span></th>
+          <th onclick="sortTable(1)" data-col="1">Tipo <span class="sort-icon">↕</span></th>
+          <th onclick="sortTable(2)" data-col="2">Título / Número <span class="sort-icon">↕</span></th>
+          <th>Ementa</th>
+          <th>Vigência</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
 
-      <!-- 1 -->
-      <tr class="revogado"
-          data-tipo="portaria"
-          data-status="revogado"
-          data-ano="2025"
+        <!-- 1 -->
+        <tr class="revogado" data-tipo="portaria" data-status="revogado" data-ano="2025"
           data-search="portaria conjunta mgi mf cgu 103 29 dezembro 2025 transferências obrigatórias recursos financeiros parceria público-privada entes subnacionais termo de compromisso revogada">
-        <td class="td-data">29/dez/25</td>
-        <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
-        <td class="td-titulo">
-          <div class="doc-numero">MGI/MF/CGU n. 103/2025</div>
-          <a href="#" class="doc-link">Portaria Conjunta MGI/MF/CGU n. 103, de 29 de dezembro de 2025</a>
-        </td>
-        <td class="td-ementa">Dispõe sobre as transferências obrigatórias de recursos financeiros da União para aporte de recursos em Parceria Público-Privada de entes subnacionais, operacionalizadas por meio da celebração de termo de compromisso.</td>
-        <td class="td-vigencia">29/12/2025<br><span style="color:var(--muted2);font-size:10px;">Entrada em vigor</span></td>
-        <td class="td-status">
-          <span class="status-badge badge-rev">● Revogada</span>
-          <div class="revogado-por">Revogada pela <a href="#">Portaria Conjunta n. [xxx/xxxx]</a></div>
-        </td>
-      </tr>
+          <td class="td-data">29/dez/25</td>
+          <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
+          <td class="td-titulo">
+            <div class="doc-numero">MGI/MF/CGU n. 103/2025</div>
+            <a href="#" class="doc-link">Portaria Conjunta MGI/MF/CGU n. 103, de 29 de dezembro de 2025</a>
+          </td>
+          <td class="td-ementa">Dispõe sobre as transferências obrigatórias de recursos financeiros da União para aporte
+            de recursos em Parceria Público-Privada de entes subnacionais, operacionalizadas por meio da celebração de
+            termo de compromisso.</td>
+          <td class="td-vigencia">29/12/2025<br><span style="color:var(--muted2);font-size:10px;">Entrada em
+              vigor</span></td>
+          <td class="td-status">
+            <span class="status-badge badge-rev">● Revogada</span>
+            <div class="revogado-por">Revogada pela <a href="#">Portaria Conjunta n. [xxx/xxxx]</a></div>
+          </td>
+        </tr>
 
-      <!-- 2 -->
-      <tr data-tipo="portaria" data-status="vigor" data-ano="2025"
+        <!-- 2 -->
+        <tr data-tipo="portaria" data-status="vigor" data-ano="2025"
           data-search="portaria conjunta mgi mf cgu 99 16 dezembro 2025 regras transitórias condições suspensivas prazo vigência convênios contratos repasse">
-        <td class="td-data">16/dez/25</td>
-        <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
-        <td class="td-titulo">
-          <div class="doc-numero">MGI/MF/CGU n. 99/2025</div>
-          <a href="#" class="doc-link">Portaria Conjunta MGI/MF/CGU n. 99, de 16 de dezembro de 2025</a>
-        </td>
-        <td class="td-ementa">Estabelece regras transitórias para o cumprimento das condições suspensivas e para a definição do prazo de vigência dos convênios e contratos de repasse celebrados até 31 de dezembro de 2023, no exercício de 2024 e 2025.</td>
-        <td class="td-vigencia">16/12/2025</td>
-        <td class="td-status">
-          <span class="status-badge badge-vigor">● Em vigor</span>
-        </td>
-      </tr>
+          <td class="td-data">16/dez/25</td>
+          <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
+          <td class="td-titulo">
+            <div class="doc-numero">MGI/MF/CGU n. 99/2025</div>
+            <a href="#" class="doc-link">Portaria Conjunta MGI/MF/CGU n. 99, de 16 de dezembro de 2025</a>
+          </td>
+          <td class="td-ementa">Estabelece regras transitórias para o cumprimento das condições suspensivas e para a
+            definição do prazo de vigência dos convênios e contratos de repasse celebrados até 31 de dezembro de 2023,
+            no exercício de 2024 e 2025.</td>
+          <td class="td-vigencia">16/12/2025</td>
+          <td class="td-status">
+            <span class="status-badge badge-vigor">● Em vigor</span>
+          </td>
+        </tr>
 
-      <!-- 3 -->
-      <tr data-tipo="portaria" data-status="vigor" data-ano="2025"
+        <!-- 3 -->
+        <tr data-tipo="portaria" data-status="vigor" data-ano="2025"
           data-search="portaria conjunta mgi cgu 96 12 dezembro 2025 revoga portaria interministerial me cgu 6909 2021 regime especial governança imóveis da união">
-        <td class="td-data">12/dez/25</td>
-        <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
-        <td class="td-titulo">
-          <div class="doc-numero">MGI/CGU n. 96/2025</div>
-          <a href="#" class="doc-link">Portaria Conjunta MGI/CGU n. 96, de 12 de dezembro de 2025</a>
-        </td>
-        <td class="td-ementa">Revoga a Portaria Interministerial ME/CGU nº 6.909, de 21 de junho de 2021, que instituía regime especial de governança para a destinação de imóveis da União.</td>
-        <td class="td-vigencia">12/12/2025</td>
-        <td class="td-status">
-          <span class="status-badge badge-vigor">● Em vigor</span>
-        </td>
-      </tr>
+          <td class="td-data">12/dez/25</td>
+          <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
+          <td class="td-titulo">
+            <div class="doc-numero">MGI/CGU n. 96/2025</div>
+            <a href="#" class="doc-link">Portaria Conjunta MGI/CGU n. 96, de 12 de dezembro de 2025</a>
+          </td>
+          <td class="td-ementa">Revoga a Portaria Interministerial ME/CGU nº 6.909, de 21 de junho de 2021, que
+            instituía regime especial de governança para a destinação de imóveis da União.</td>
+          <td class="td-vigencia">12/12/2025</td>
+          <td class="td-status">
+            <span class="status-badge badge-vigor">● Em vigor</span>
+          </td>
+        </tr>
 
-      <!-- 4 -->
-      <tr data-tipo="portaria" data-status="vigor" data-ano="2024"
+        <!-- 4 -->
+        <tr data-tipo="portaria" data-status="vigor" data-ano="2024"
           data-search="portaria 4826 18 dezembro 2024 deliberação 04 2024 comissão coordenação controle interno ccci">
-        <td class="td-data">18/dez/24</td>
-        <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
-        <td class="td-titulo">
-          <div class="doc-numero">Portaria n. 4.826/2024</div>
-          <a href="#" class="doc-link">Portaria n. 4.826, de 18 de dezembro de 2024</a>
-        </td>
-        <td class="td-ementa">Publica a Deliberação nº 04/2024 da Comissão de Coordenação de Controle Interno — CCCI, aprovada na sessão realizada em 17 de dezembro de 2024.</td>
-        <td class="td-vigencia">18/12/2024</td>
-        <td class="td-status">
-          <span class="status-badge badge-vigor">● Em vigor</span>
-        </td>
-      </tr>
+          <td class="td-data">18/dez/24</td>
+          <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
+          <td class="td-titulo">
+            <div class="doc-numero">Portaria n. 4.826/2024</div>
+            <a href="#" class="doc-link">Portaria n. 4.826, de 18 de dezembro de 2024</a>
+          </td>
+          <td class="td-ementa">Publica a Deliberação nº 04/2024 da Comissão de Coordenação de Controle Interno — CCCI,
+            aprovada na sessão realizada em 17 de dezembro de 2024.</td>
+          <td class="td-vigencia">18/12/2024</td>
+          <td class="td-status">
+            <span class="status-badge badge-vigor">● Em vigor</span>
+          </td>
+        </tr>
 
-      <!-- 5 -->
-      <tr data-tipo="portaria" data-status="vigor" data-ano="2024"
+        <!-- 5 -->
+        <tr data-tipo="portaria" data-status="vigor" data-ano="2024"
           data-search="portaria 4828 18 dezembro 2024 deliberação 04 2024 comissão coordenação controle interno ccci">
-        <td class="td-data">18/dez/24</td>
-        <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
-        <td class="td-titulo">
-          <div class="doc-numero">Portaria n. 4.828/2024</div>
-          <a href="#" class="doc-link">Portaria n. 4.828, de 18 de dezembro de 2024</a>
-        </td>
-        <td class="td-ementa">Publica a Deliberação nº 04/2024 da Comissão de Coordenação de Controle Interno — CCCI, aprovada na sessão realizada em 17 de dezembro de 2024.</td>
-        <td class="td-vigencia">18/12/2024</td>
-        <td class="td-status">
-          <span class="status-badge badge-vigor">● Em vigor</span>
-        </td>
-      </tr>
+          <td class="td-data">18/dez/24</td>
+          <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
+          <td class="td-titulo">
+            <div class="doc-numero">Portaria n. 4.828/2024</div>
+            <a href="#" class="doc-link">Portaria n. 4.828, de 18 de dezembro de 2024</a>
+          </td>
+          <td class="td-ementa">Publica a Deliberação nº 04/2024 da Comissão de Coordenação de Controle Interno — CCCI,
+            aprovada na sessão realizada em 17 de dezembro de 2024.</td>
+          <td class="td-vigencia">18/12/2024</td>
+          <td class="td-status">
+            <span class="status-badge badge-vigor">● Em vigor</span>
+          </td>
+        </tr>
 
-      <!-- 6 -->
-      <tr data-tipo="portaria" data-status="vigor" data-ano="2024"
+        <!-- 6 -->
+        <tr data-tipo="portaria" data-status="vigor" data-ano="2024"
           data-search="portaria 4827 18 dezembro 2024 deliberação 04 2024 comissão coordenação controle interno ccci">
-        <td class="td-data">18/dez/24</td>
-        <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
-        <td class="td-titulo">
-          <div class="doc-numero">Portaria n. 4.827/2024</div>
-          <a href="#" class="doc-link">Portaria n. 4.827, de 18 de dezembro de 2024</a>
-        </td>
-        <td class="td-ementa">Publica a Deliberação nº 04/2024 da Comissão de Coordenação de Controle Interno — CCCI, aprovada na sessão realizada em 17 de dezembro de 2024.</td>
-        <td class="td-vigencia">18/12/2024</td>
-        <td class="td-status">
-          <span class="status-badge badge-vigor">● Em vigor</span>
-        </td>
-      </tr>
+          <td class="td-data">18/dez/24</td>
+          <td class="td-tipo"><span class="tipo-pill tipo-portaria">Portaria</span></td>
+          <td class="td-titulo">
+            <div class="doc-numero">Portaria n. 4.827/2024</div>
+            <a href="#" class="doc-link">Portaria n. 4.827, de 18 de dezembro de 2024</a>
+          </td>
+          <td class="td-ementa">Publica a Deliberação nº 04/2024 da Comissão de Coordenação de Controle Interno — CCCI,
+            aprovada na sessão realizada em 17 de dezembro de 2024.</td>
+          <td class="td-vigencia">18/12/2024</td>
+          <td class="td-status">
+            <span class="status-badge badge-vigor">● Em vigor</span>
+          </td>
+        </tr>
 
-      <!-- 7 -->
-      <tr data-tipo="orientacao" data-status="vigor" data-ano="2024"
+        <!-- 7 -->
+        <tr data-tipo="orientacao" data-status="vigor" data-ano="2024"
           data-search="orientação prática supervisão trabalhos auditoria diretrizes conceituais artefatos técnicos auditoria interna governamental sfci controladoria regional">
-        <td class="td-data">30/ago/24</td>
-        <td class="td-tipo"><span class="tipo-pill tipo-orientacao">Orientação</span></td>
-        <td class="td-titulo">
-          <div class="doc-numero">OP — Supervisão / 2024</div>
-          <a href="#" class="doc-link">Orientação Prática: Supervisão dos Trabalhos de Auditoria</a>
-        </td>
-        <td class="td-ementa">Estabelece diretrizes conceituais e artefatos técnicos para o exercício da atividade de supervisão dos trabalhos de auditoria interna governamental no âmbito da SFCI e das Controladorias Regionais da União nos Estados.</td>
-        <td class="td-vigencia">30/08/2024</td>
-        <td class="td-status">
-          <span class="status-badge badge-vigor">● Em vigor</span>
-        </td>
-      </tr>
+          <td class="td-data">30/ago/24</td>
+          <td class="td-tipo"><span class="tipo-pill tipo-orientacao">Orientação</span></td>
+          <td class="td-titulo">
+            <div class="doc-numero">OP — Supervisão / 2024</div>
+            <a href="#" class="doc-link">Orientação Prática: Supervisão dos Trabalhos de Auditoria</a>
+          </td>
+          <td class="td-ementa">Estabelece diretrizes conceituais e artefatos técnicos para o exercício da atividade de
+            supervisão dos trabalhos de auditoria interna governamental no âmbito da SFCI e das Controladorias Regionais
+            da União nos Estados.</td>
+          <td class="td-vigencia">30/08/2024</td>
+          <td class="td-status">
+            <span class="status-badge badge-vigor">● Em vigor</span>
+          </td>
+        </tr>
 
-      <!-- 8 – exemplo adicional de parcialmente alterado -->
-      <tr data-tipo="instrucao" data-status="parcial" data-ano="2024"
+        <!-- 8 – exemplo adicional de parcialmente alterado -->
+        <tr data-tipo="instrucao" data-status="parcial" data-ano="2024"
           data-search="instrução normativa exemplo parcialmente alterada controle interno">
-        <td class="td-data">05/mar/24</td>
-        <td class="td-tipo"><span class="tipo-pill tipo-instrucao">IN</span></td>
-        <td class="td-titulo">
-          <div class="doc-numero">IN CGU n. 02/2024</div>
-          <a href="#" class="doc-link">Instrução Normativa CGU n. 02, de 5 de março de 2024</a>
-        </td>
-        <td class="td-ementa">Dispõe sobre os procedimentos de auditoria interna governamental aplicáveis às entidades do Poder Executivo Federal. <em style="color:var(--warn);font-size:13px;">[exemplo ilustrativo]</em></td>
-        <td class="td-vigencia">05/03/2024</td>
-        <td class="td-status">
-          <span class="status-badge badge-parcial">◐ Alt. parcialmente</span>
-          <div class="revogado-por">Art. 4º alterado pela <a href="#" style="color:var(--warn);border-color:rgba(92,61,0,0.3)">IN CGU n. 05/2024</a></div>
-        </td>
-      </tr>
+          <td class="td-data">05/mar/24</td>
+          <td class="td-tipo"><span class="tipo-pill tipo-instrucao">IN</span></td>
+          <td class="td-titulo">
+            <div class="doc-numero">IN CGU n. 02/2024</div>
+            <a href="#" class="doc-link">Instrução Normativa CGU n. 02, de 5 de março de 2024</a>
+          </td>
+          <td class="td-ementa">Dispõe sobre os procedimentos de auditoria interna governamental aplicáveis às entidades
+            do Poder Executivo Federal. <em style="color:var(--warn);font-size:13px;">[exemplo ilustrativo]</em></td>
+          <td class="td-vigencia">05/03/2024</td>
+          <td class="td-status">
+            <span class="status-badge badge-parcial">◐ Alt. parcialmente</span>
+            <div class="revogado-por">Art. 4º alterado pela <a href="#"
+                style="color:var(--warn);border-color:rgba(92,61,0,0.3)">IN CGU n. 05/2024</a></div>
+          </td>
+        </tr>
 
-    </tbody>
-  </table>
+      </tbody>
+    </table>
 
-  <div class="no-results" id="no-results">
-    <strong>Nenhum normativo encontrado</strong>
-    Tente outros termos de busca ou remova os filtros.
+    <div class="no-results" id="no-results">
+      <strong>Nenhum normativo encontrado</strong>
+      Tente outros termos de busca ou remova os filtros.
+    </div>
   </div>
-</div>
 
-<footer>
-  IFTO · AUDIN — Unidade de Auditoria Interna &nbsp;|&nbsp; Dados atualizados em 20/03/2026 &nbsp;|&nbsp; Dúvidas: audin@ifto.edu.br
-</footer>
+  <footer>
+    IFTO · AUDIN — Unidade de Auditoria Interna &nbsp;|&nbsp; Dados atualizados em 20/03/2026 &nbsp;|&nbsp; Dúvidas:
+    audin@ifto.edu.br
+  </footer>
 
-<script>
-  let sortCol = 0;
-  let sortDir = 1;
+  <script>
+    let sortCol = 0;
+    let sortDir = 1;
 
-  function filterTable() {
-    const q      = document.getElementById('search').value.toLowerCase();
-    const tipo   = document.getElementById('filter-tipo').value;
-    const status = document.getElementById('filter-status').value;
-    const ano    = document.getElementById('filter-ano').value;
-    const rows   = document.querySelectorAll('#tbody tr');
-    let visible  = 0;
+    function unificarTexto(str) {
+      return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    }
 
-    rows.forEach(row => {
-      const search = row.dataset.search || '';
-      const matchQ      = !q      || search.includes(q) || row.innerText.toLowerCase().includes(q);
-      const matchTipo   = !tipo   || row.dataset.tipo   === tipo;
-      const matchStatus = !status || row.dataset.status === status;
-      const matchAno    = !ano    || row.dataset.ano    === ano;
-      const show = matchQ && matchTipo && matchStatus && matchAno;
-      row.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
+    function clearSearch() {
+      document.getElementById('search').value = '';
+      filterTable();
+    }
 
-    document.getElementById('result-count').textContent = visible + ' resultado' + (visible !== 1 ? 's' : '');
-    document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
-    updateStats(rows);
-  }
+    function createAccentedRegex(term) {
+      const map = {
+        'a': '[aáàãâä]', 'e': '[eéèêë]', 'i': '[iíìîï]', 'o': '[oóòõôö]', 'u': '[uúùûü]',
+        'c': '[cç]', 'n': '[nñ]'
+      };
+      let regexStr = '';
+      for (let char of term.toLowerCase()) {
+        if (map[char]) regexStr += map[char];
+        else regexStr += char.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      }
+      return new RegExp(regexStr, 'gi');
+    }
 
-  function updateStats(rows) {
-    let total = 0, vigor = 0, rev = 0;
-    const tipos = new Set();
-    rows.forEach(row => {
-      if (row.style.display === 'none') return;
-      total++;
-      if (row.dataset.status === 'vigor')    vigor++;
-      if (row.dataset.status === 'revogado') rev++;
-      if (row.dataset.tipo) tipos.add(row.dataset.tipo);
-    });
-    document.getElementById('total-count').textContent = total;
-    document.getElementById('vigor-count').textContent = vigor;
-    document.getElementById('rev-count').textContent = rev;
-    document.getElementById('tipo-count').textContent = tipos.size;
-  }
+    function highlightTerms(node, regexes) {
+      if (node.nodeType === 3) {
+        const val = node.nodeValue;
+        let matchInfo = null;
 
-  function sortTable(col) {
-    if (sortCol === col) sortDir *= -1;
-    else { sortCol = col; sortDir = 1; }
+        for (const regex of regexes) {
+          regex.lastIndex = 0;
+          const match = regex.exec(val);
+          if (match) {
+            if (!matchInfo || match.index < matchInfo.index) {
+              matchInfo = match;
+            }
+          }
+        }
 
-    const tbody = document.getElementById('tbody');
-    const rows  = Array.from(tbody.querySelectorAll('tr'));
+        if (matchInfo) {
+          const span = document.createElement('mark');
+          span.style.backgroundColor = '#ffeb3b';
+          span.style.color = 'inherit';
+          span.style.padding = '0 2px';
+          span.style.borderRadius = '2px';
 
-    rows.sort((a, b) => {
-      const aT = a.cells[col].innerText.trim();
-      const bT = b.cells[col].innerText.trim();
-      return aT.localeCompare(bT, 'pt-BR') * sortDir;
-    });
+          const matchedText = matchInfo[0];
+          span.textContent = matchedText;
 
-    rows.forEach(r => tbody.appendChild(r));
+          const matchStart = matchInfo.index;
+          const afterText = val.substr(matchStart + matchedText.length);
 
-    document.querySelectorAll('thead th').forEach((th, i) => {
-      th.classList.toggle('sorted', i === col);
-      const icon = th.querySelector('.sort-icon');
-      if (icon) icon.textContent = i === col ? (sortDir === 1 ? '↑' : '↓') : '↕';
-    });
-  }
+          node.nodeValue = val.substr(0, matchStart);
+          node.parentNode.insertBefore(span, node.nextSibling);
 
-  // init
-  filterTable();
-</script>
+          if (afterText) {
+            const afterNode = document.createTextNode(afterText);
+            node.parentNode.insertBefore(afterNode, span.nextSibling);
+            highlightTerms(afterNode, regexes);
+          }
+        }
+      } else if (node.nodeType === 1 && node.nodeName !== 'MARK' && node.nodeName !== 'SCRIPT' && node.nodeName !== 'STYLE') {
+        Array.from(node.childNodes).forEach(child => highlightTerms(child, regexes));
+      }
+    }
+
+    function filterTable() {
+      const rawQ = document.getElementById('search').value;
+
+      // Exibe ou oculta o botão de limpar caso haja texto
+      const btnClear = document.getElementById('btn-clear-search');
+      if (btnClear) btnClear.style.display = rawQ ? '' : 'none';
+
+      const termos = unificarTexto(rawQ).split(/[\s+]+/).filter(t => t.length > 0);
+      const regexes = termos.map(createAccentedRegex);
+
+      const tipo = document.getElementById('filter-tipo').value;
+      const status = document.getElementById('filter-status').value;
+      const ano = document.getElementById('filter-ano').value;
+      const rows = document.querySelectorAll('#tbody tr');
+      let visible = 0;
+
+      // Inicializa backup das rows originais e target="_blank"
+      if (!window.originalRowsHtml) {
+        document.querySelectorAll('#tbody .td-titulo a').forEach(a => a.setAttribute('target', '_blank'));
+        window.originalRowsHtml = Array.from(rows).map(r => r.innerHTML);
+      }
+
+      rows.forEach((row, idx) => {
+        // Restaura o HTML para limpar marcações anteriores
+        row.innerHTML = window.originalRowsHtml[idx];
+
+        const searchData = unificarTexto(row.dataset.search || '');
+        const textData = unificarTexto(row.innerText || '');
+
+        // Valida se TODOS os termos buscados estão presentes no conteúdo (operador AND)
+        const matchQ = termos.every(termo => searchData.includes(termo) || textData.includes(termo));
+
+        const matchTipo = !tipo || row.dataset.tipo === tipo;
+        const matchStatus = !status || row.dataset.status === status;
+        const matchAno = !ano || row.dataset.ano === ano;
+        const show = matchQ && matchTipo && matchStatus && matchAno;
+        row.style.display = show ? '' : 'none';
+        if (show) {
+          if (termos.length > 0) highlightTerms(row, regexes);
+          visible++;
+        }
+      });
+
+      document.getElementById('result-count').textContent = visible + ' resultado' + (visible !== 1 ? 's' : '');
+      document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+      updateStats(rows);
+    }
+
+    function updateStats(rows) {
+      let total = 0, vigor = 0, rev = 0;
+      const tipos = new Set();
+      rows.forEach(row => {
+        if (row.style.display === 'none') return;
+        total++;
+        if (row.dataset.status === 'vigor') vigor++;
+        if (row.dataset.status === 'revogado') rev++;
+        if (row.dataset.tipo) tipos.add(row.dataset.tipo);
+      });
+      document.getElementById('total-count').textContent = total;
+      document.getElementById('vigor-count').textContent = vigor;
+      document.getElementById('rev-count').textContent = rev;
+      document.getElementById('tipo-count').textContent = tipos.size;
+    }
+
+    function sortTable(col) {
+      if (sortCol === col) sortDir *= -1;
+      else { sortCol = col; sortDir = 1; }
+
+      const tbody = document.getElementById('tbody');
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+
+      rows.sort((a, b) => {
+        const aT = a.cells[col].innerText.trim();
+        const bT = b.cells[col].innerText.trim();
+        return aT.localeCompare(bT, 'pt-BR') * sortDir;
+      });
+
+      rows.forEach(r => tbody.appendChild(r));
+
+      document.querySelectorAll('thead th').forEach((th, i) => {
+        th.classList.toggle('sorted', i === col);
+        const icon = th.querySelector('.sort-icon');
+        if (icon) icon.textContent = i === col ? (sortDir === 1 ? '↑' : '↓') : '↕';
+      });
+    }
+
+    // init
+    filterTable();
+  </script>
 </body>
+
 </html>
